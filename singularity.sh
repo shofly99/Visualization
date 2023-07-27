@@ -1,7 +1,7 @@
 echo "Installing go"
 
 export VERSION=1.20.6 OS=linux ARCH=amd64 && \
-    wget https://dl.google.com/go/go$VERSION.$OS-$ARCH.tar.gz && \
+    wget https://dl.google.com/go/go1.20.6.linux-amd64.tar.gz && \
     mkdir -p $HOME/.local && \
     tar -C $HOME/.local -xzvf go$VERSION.$OS-$ARCH.tar.gz && \
     rm go$VERSION.$OS-$ARCH.tar.gz

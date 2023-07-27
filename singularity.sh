@@ -1,6 +1,6 @@
 echo "Installing go"
 
-export VERSION=1.14.2 OS=linux ARCH=amd64 && \
+export VERSION=1.20.6 OS=linux ARCH=amd64 && \
     wget https://dl.google.com/go/go$VERSION.$OS-$ARCH.tar.gz && \
     mkdir -p $HOME/.local && \
     tar -C $HOME/.local -xzvf go$VERSION.$OS-$ARCH.tar.gz && \
@@ -23,8 +23,8 @@ sudo apt-get update && sudo apt-get install -y \
     git \
     cryptsetup
 
-export VERSION=3.11.4 && \
-	wget https://github.com/sylabs/singularity/releases/download/v$VERSION/singularity-ce-$VERSION.tar.gz && \
+export VERSION=ce-3.11.4 && \
+	wget https://github.com/sylabs/singularity/releases/download/v$VERSION/singularity-$VERSION.tar.gz && \
 	tar -xzf singularity-$VERSION.tar.gz && rm singularity-$VERSION.tar.gz && \
 	cd singularity && \
 	./mconfig && \
